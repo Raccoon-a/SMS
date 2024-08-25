@@ -1,0 +1,70 @@
+{
+    "paipai": {
+    "url": "https://account.ppdai.com/pc/login",
+        "initial_wait": 3,
+        "actions": [
+        {"type": "click", "by": "ID", "value": "login_returnSms"},
+        {"type": "send_keys", "by": "ID", "value": "Mobile"},
+        {"type": "click", "by": "ID", "value": "btnSendSms", "wait": 2}
+    ]
+},
+
+    "pengpai":{
+    "url":"",
+        "initial_wait": 3,
+        "actions": [
+        {"type": "click", "by": "ID", "value": "ant-btn ant-btn-default ant-btn-sm"},
+        {"type": "phone_username", "by": "ID", "value": "Mobile"},
+        {"type": "click", "by": "ID", "value": "btnSendSms", "wait": 2}
+    ]
+},
+    "juren": {
+    "url": "https://reg.ztgame.com/",
+        "initial_wait": 3,
+        "actions": [
+        {"type": "send_keys", "by": "CSS_SELECTOR", "value": "[jslog-trace-id='phone']"},
+        {"type": "click", "by": "NAME", "value": "get_mpcode", "wait": 3}
+    ]
+},
+    "chuanhang": {
+    "url": "https://flights.sichuanair.com/3uair/ibe/profile/createProfile.do",
+        "initial_wait": 3,
+        "actions": [
+        {"type": "send_keys", "by": "NAME", "value": "mobilePhone"},
+        {"type": "click", "by": "ID", "value": "sendSmsCode", "wait": 2}
+    ]
+},
+    "wushang": {
+    "url": "https://www.wushang.com/register/",
+        "initial_wait": 5,
+        "actions": [
+        {"type": "send_keys", "by": "XPATH", "value": "//input[@placeholder='输入手机号']", "wait": 2},
+        {"type": "click", "by": "ID", "value": "inner_61a9647a-f874-4a7d-a3d2-d02b52011280", "wait": 2}
+    ]
+},
+    "caiyun": {
+    "url": "https://caiyunapp.com/user/login/",
+        "initial_wait": 5,
+        "actions": [
+        {"type": "send_keys", "by": "ID", "value": "phonenum"},
+        {"type": "click", "by": "ID", "value": "second", "wait": 2}
+    ]
+},
+    "phpzw": {
+    "url": "https://m.php.cn/login",
+        "initial_wait": 3,
+        "actions": [
+        {"type": "send_keys", "by": "ID", "value": "telphone_login"},
+        {"type": "click", "by": "ID", "value": "user_phone_code_button", "wait": 2}
+    ]
+},
+    "spump": {
+    "url": "https://v3.cnppump.ltd/#/CN/login/tel?utp=0",
+        "initial_wait": 4,
+        "actions": [
+        {"type": "click", "by": "ID", "value": "sign-up-btn", "wait": 2},
+        {"type": "send_keys", "by": "XPATH", "value": "//input[@placeholder='请输入手机号']"},
+        {"type": "click", "by": "CLASS_NAME", "value": "el-button", "wait": 2}
+    ]
+}
+}
